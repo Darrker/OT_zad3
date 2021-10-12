@@ -1,6 +1,3 @@
-
-
-
 var btn = document.querySelector('.js-btn-get-date');
 var alert = document.querySelector('.js-response-get-date')
 
