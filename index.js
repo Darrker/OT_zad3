@@ -5,12 +5,12 @@ const port = 3000;
 
 const app = express();
 
-app.set('view engine', 'hbs');
-app.use(express.static(path.join(__dirname,'public')));
+
+ app.use(express.static(path.join(__dirname,'public')));
 
 app.get('/', (request, response) =>{
   
-    response.render('index');
+    response.sendFile(path.join(__dirname+'/index.html'));
    
 
 });
